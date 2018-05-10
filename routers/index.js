@@ -15,5 +15,7 @@ router.get('/', async (ctx, next) => {
   }
   ctx.body = query.echostr;
 });
-
+router.get('wx', async (ctx, next) => {
+  ctx.body ="ok";
+});
 module.exports = router;
