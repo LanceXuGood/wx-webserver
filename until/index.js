@@ -9,5 +9,5 @@ function checkSignature(params,token) {
 }
 
 module.exports = {
-  checkSignature
+  checkSignature: checkSignature
 };
