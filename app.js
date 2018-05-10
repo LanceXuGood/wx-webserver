@@ -2,7 +2,7 @@ const Koa = require('koa');
 const router = require('koa-router')();
 const staticServer = require('koa-static'); //静态资源
 const cors = require('koa2-cors'); //跨域
-const bodyParser = require('koa-bodyparser')
+const bodyParser = require('koa-bodyparser');
 // const fs = require('fs')
 const index = require("./routers");
 
@@ -37,7 +37,7 @@ app
   .use(router.allowedMethods());
 
 app.on('error', function(err, ctx) {
-  console.log(err)
+  console.log(err);
   log.error('server error', err, ctx);
 });
 module.exports = app;
