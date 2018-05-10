@@ -1,7 +1,9 @@
 const router = require('koa-router')();
 const request = require('superagent');
-const checkSignature = require('../until');
 const TOKEN='xuyan';
+const {
+  checkSignature
+} = require('../until/index');
 // 测试api接口
 router.get('/', async (ctx, next) => {
   const query  = ctx.request.query;
