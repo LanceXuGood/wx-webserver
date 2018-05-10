@@ -1,7 +1,7 @@
 module.exports = {
   baseConfig: {
-    appid: 'wxb8af278f88700e64',
-    secret: '0413fc6ee6e4ac8e04313179727c83dd',
+    appid: 'wx0ceb2aaf5f4f4915',
+    secret: '91d58c2fa0ecdba59a197d9544394f3f',
     nonce_str: '123456'
   }
 };

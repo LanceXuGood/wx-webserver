@@ -23,7 +23,6 @@ router.get('wx', async (ctx, next) => {
 
 //获取asses_token
 router.post('wx/jsSdk', async (ctx, next) =>{
-
   const access_tokenData = await request.get('https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid='+baseConfig.appid+'&secret='+baseConfig.secret);
   console.log('成功获取access_token');
   const access_token = access_tokenData.body.access_token;
@@ -41,7 +40,6 @@ router.post('wx/jsSdk', async (ctx, next) =>{
   const sha1 = require("crypto").createHash('sha1');
   sha1.update(str);
   const signature = sha1.digest("hex");
-
   ctx.body={
     data:{
       appId: baseConfig.appid,
