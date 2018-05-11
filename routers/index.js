@@ -7,7 +7,7 @@ const {
 
 
 // 测试api接口
-router.get('wx', async (ctx, next) => {
+router.get('wxconnect', async (ctx, next) => {
   const query = ctx.request.query;
   console.log(query);
   console.log("token :", TOKEN);
